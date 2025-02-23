@@ -1,0 +1,28 @@
+# Ignorar a pasta do ambiente virtual
+venv/
+.env
+*.venv/
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configurações do editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Arquivos de dependências e logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Arquivos de configuração do sistema
+.DS_Store  # MacOS
+Thumbs.db  # Windows

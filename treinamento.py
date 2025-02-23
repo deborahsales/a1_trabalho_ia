@@ -13,7 +13,7 @@ import datetime
 
 # Criar ambiente Atari
 games = ["ALE/Breakout-v5", "ALE/Pacman-v5"]
-chosen_game = games[0]
+chosen_game = games[1]
 env = gym.make(chosen_game, render_mode='rgb_array')
 env.reset()
 
@@ -85,7 +85,7 @@ def select_action(state, model, mcts, epsilon=0.1):
             return model(state_tensor).argmax().item()  # DQN para exploração
 
 # Parâmetros do treinamento
-num_episodes = 3
+num_episodes = 300
 gamma = 0.99
 learning_rate = 0.0001
 epsilon = 1.0
